@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<title>Daisy's Coffee Shop</title>
+<body>
+
+<form action="http://www.starbucks.com/">
+	<p>
+		Choose your beans:
+		<select name="beans">
+			<option value="Blue Mountain">Blue Mountain</option>
+			<option value="Arabica">Arabica</option>
+			<option value="Sumatra">Sumatra</option>
+		</select>
+	</p>
+	<p>
+		Type:<br>
+		   <input type="radio" name="beantype" value="medium roast">Medium Roast<br>
+		   <input type="radio" name="beantype" value="dark roast">Dark Roast<br>
+		   <input type="radio" name="beantype" value="ground">Ground<br>
+	</p>
+	<p>Number of bags: <input type ="number" name="bags" min="1" max="10"></p>
+	<p>Must arrive by date: <input type ="date" name="date"></p>
+
+	<p>
+		Extras:<br>
+		<input type="checkbox" name="extras []" value="giftwrap">Gift wrap<br>
+		<input type="checkbox" name="extras []" value="catalog" checked>Include catalog with order
+	</p>
+
+	<p>
+		Ship to: <br>
+		Name:<input type="text" name="name" value=""><br>
+		Address: <input type="text" name="address" value=""><br>
+		City: <input type="text" name="city" value=""><br>
+		State: <input type="text" name"state" value=""><br>
+		Zip: <input type="text" name="zip" value=""><br>
+		Phone: <input type="tel" name="phone" value=""><br>
+	</p>
+
+	<p>Customer Comments:<br>
+		<textarea name="comments"></textarea>
+		
+	</p>
+
+	<p>
+		<input type="submit" value="Order Now">
+	</p>
+
+</form>
+
+</body>
+</html>
